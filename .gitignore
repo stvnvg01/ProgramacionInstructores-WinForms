@@ -1,0 +1,23 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Build outputs
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+*.pdb
+
+# LocalDB / SQL artifacts (recomendado fuera del repo)
+*.mdf
+*.ldf
+*.bak
+
+# Distribution artifacts (van en Releases)
+Distribucion/
+**/Output/
+**/*.exe
+**/*.msi
