@@ -69,3 +69,50 @@ Para facilitar la evaluación y prueba del sistema, el proyecto incluye un **ins
 ### Pasos:
 1. Ir a la sección **Releases** de este repositorio
 2. Descargar el archivo:
+3. Ejecutar el instalador
+4. Abrir la aplicación desde el acceso directo creado
+
+> El instalador **incluye SQL Server LocalDB** y configura automáticamente la base de datos demo.
+
+### 🔑 Credenciales de demostración
+- **Usuario:** Admin  
+- **Contraseña:** 123  
+
+> Estas credenciales corresponden a una base de datos **vacía y de prueba**, sin información real.
+
+---
+
+## 💻 Ejecución desde código (Visual Studio)
+
+### Requisitos:
+- Visual Studio 2017 o superior
+- .NET Framework 4.5.2
+- SQL Server Express LocalDB
+
+### Pasos:
+1. Clonar el repositorio
+2. Abrir el archivo `.sln`
+3. Restaurar dependencias si aplica
+4. Compilar y ejecutar (F5)
+
+> Para la demo desde código, la aplicación utiliza la configuración definida en `App.config`.
+
+---
+
+## 🧪 Base de datos
+
+- Base de datos **LocalDB**
+- Estructura preparada para uso administrativo
+- **Sin datos reales**
+- Usuario administrador creado únicamente para demostración
+
+La base de datos se inicializa automáticamente al instalar la aplicación mediante el instalador.
+
+---
+
+## 📸 Capturas de pantalla
+
+Las capturas de la aplicación se encuentran en la carpeta:
+
+
+
