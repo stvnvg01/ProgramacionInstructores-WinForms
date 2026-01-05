@@ -110,9 +110,27 @@ La base de datos se inicializa automáticamente al instalar la aplicación media
 
 ---
 
-## 📸 Capturas de pantalla
+## 📄 Estado del proyecto
 
-Las capturas de la aplicación se encuentran en la carpeta:
+- ✔ Proyecto funcional
+- ✔ Compilación exitosa
+- ✔ Instalador operativo
+- ✔ Enfoque académico y demostrativo
+- 🔄 Posibles mejoras futuras:
+  - Separación por capas (DAL / BLL)
+  - Manejo de hash de contraseñas
+  - Migración a .NET moderno o aplicación web
 
+---
+
+## 👤 Autor
+
+Proyecto desarrollado como parte de las **prácticas del SENA – Tecnólogo en Desarrollo de Software  - bajo el mando del subdirector del Complejo Minero Agroempresarial CTAME Fernando Cano Gomez-**, con fines académicos, demostrativos y de portafolio profesional.
+
+---
+
+## ⚠️ Nota final
+
+Este repositorio tiene como finalidad **mostrar competencias técnicas**, estructura de proyecto y capacidad de llevar una aplicación desde el desarrollo hasta el despliegue, no representar un sistema productivo final.
 
 
