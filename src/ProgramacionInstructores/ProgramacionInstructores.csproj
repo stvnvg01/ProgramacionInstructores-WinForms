@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04418553-83A1-4ACD-83F4-92FC703804E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProgramacionInstructores</RootNamespace>
+    <AssemblyName>ProgramacionInstructores</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AES.cs" />
+    <Compile Include="BibliotecaExcel2\Btngenerar.cs" />
+    <Compile Include="BibliotecaExcel2\Class1.cs" />
+    <Compile Include="BibliotecaExcel2\Class2.cs" />
+    <Compile Include="BibliotecaExcel2\Class4.cs" />
+    <Compile Include="BibliotecaExcel2\dgvCronograma_Cellclick.cs" />
+    <Compile Include="Bibliotecaexel\Class1.cs" />
+    <Compile Include="ClassLibrary1\Class1.cs" />
+    <Compile Include="Complementos.cs" />
+    <Compile Include="Conexion.cs" />
+    <Compile Include="EmailSender.cs" />
+    <Compile Include="EmailSettings.cs" />
+    <Compile Include="EstilosGlobales.cs" />
+    <Compile Include="FrmAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAcceso.Designer.cs">
+      <DependentUpon>FrmAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGraficos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraficos.Designer.cs">
+      <DependentUpon>FrmGraficos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCronograma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCronograma.Designer.cs">
+      <DependentUpon>FrmCronograma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFichas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFichas.designer.cs">
+      <DependentUpon>FrmFichas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompetencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompetencias.designer.cs">
+      <DependentUpon>FrmCompetencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAmbientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAmbientes.designer.cs">
+      <DependentUpon>FrmAmbientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHAcercaDe.Designer.cs">
+      <DependentUpon>FrmHAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHCopiaS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHCopiaS.Designer.cs">
+      <DependentUpon>FrmHCopiaS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInfoCelda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInfoCelda.Designer.cs">
+      <DependentUpon>FrmInfoCelda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInstructores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInstructores.designer.cs">
+      <DependentUpon>FrmInstructores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPnaIncremental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPnaIncremental.Designer.cs">
+      <DependentUpon>FrmPnaIncremental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompetenciasIncremental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompetenciasIncremental.Designer.cs">
+      <DependentUpon>FrmCompetenciasIncremental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProgramas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProgramas.designer.cs">
+      <DependentUpon>FrmProgramas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRestaurarCS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRestaurarCS.Designer.cs">
+      <DependentUpon>FrmRestaurarCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVarEntorno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVarEntorno.Designer.cs">
+      <DependentUpon>FrmVarEntorno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEstadoUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEstadoUser.Designer.cs">
+      <DependentUpon>FrmEstadoUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonas.designer.cs">
+      <DependentUpon>FrmPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDpto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDpto.designer.cs">
+      <DependentUpon>FrmDpto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpresa.designer.cs">
+      <DependentUpon>FrmEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMpio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMpio.designer.cs">
+      <DependentUpon>FrmMpio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPerfiles.designer.cs">
+      <DependentUpon>FrmPerfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infoceldas.cs" />
+    <Compile Include="PictureBoxCircular.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAcceso.resx">
+      <DependentUpon>FrmAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGraficos.resx">
+      <DependentUpon>FrmGraficos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCronograma.resx">
+      <DependentUpon>FrmCronograma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFichas.resx">
+      <DependentUpon>FrmFichas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompetencias.resx">
+      <DependentUpon>FrmCompetencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAmbientes.resx">
+      <DependentUpon>FrmAmbientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHAcercaDe.resx">
+      <DependentUpon>FrmHAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHCopiaS.resx">
+      <DependentUpon>FrmHCopiaS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInfoCelda.resx">
+      <DependentUpon>FrmInfoCelda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInstructores.resx">
+      <DependentUpon>FrmInstructores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPnaIncremental.resx">
+      <DependentUpon>FrmPnaIncremental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompetenciasIncremental.resx">
+      <DependentUpon>FrmCompetenciasIncremental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProgramas.resx">
+      <DependentUpon>FrmProgramas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRestaurarCS.resx">
+      <DependentUpon>FrmRestaurarCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVarEntorno.resx">
+      <DependentUpon>FrmVarEntorno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstadoUser.resx">
+      <DependentUpon>FrmEstadoUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonas.resx">
+      <DependentUpon>FrmPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDpto.resx">
+      <DependentUpon>FrmDpto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpresa.resx">
+      <DependentUpon>FrmEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMpio.resx">
+      <DependentUpon>FrmMpio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPerfiles.resx">
+      <DependentUpon>FrmPerfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0-Aceptar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0-Cancelar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0-FondoBto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 - Nuevo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 - Editar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 - Guardar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4 - Buscar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5 - Eliminar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6 - Imprimir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7 - Cerrar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8 - Salir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.1 - Pri.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.2 - Ant.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.3 - Sig.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.4 - Ult.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AzulNoVer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AzulVer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SinFoto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SinHuella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vacio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btogmail-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
